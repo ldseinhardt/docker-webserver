@@ -1,0 +1,127 @@
+/**
+ * Luan Einhardt
+ * Contato: ldseinhardt@gmail.com
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #606c71;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+.no-js .alert {
+  display: block;
+}
+
+.js .alert {
+  display: none;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 0, 0, .95);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  min-height: calc(100vh - 85px);
+}
+
+.container::before,
+.container::after {
+  content: ' ';
+  display: table;
+}
+
+.container::after {
+  clear: both;
+}
+
+.big-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+      -ms-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+}
+
+.big-icon .material-icons {
+  color: #9c9c9c;
+  font-size: 25rem;
+}
+
+.btn-float {
+  position: fixed !important;
+  right: 15px;
+  bottom: 15px;
+}
+
+h1 {
+  font-size: 18pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+
+h4, h5, h6 {
+  font-size: 12pt;
+}
+
+.material-icons {
+  font-size: 18pt;
+  color: #fff;
+}
+
+.autocomplete-suggestions {
+  border: 1px solid #999;
+  background: #fff;
+  overflow: auto;
+}
+
+.autocomplete-suggestion {
+  padding: 2px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.autocomplete-selected {
+  background: #f0f0f0;
+}
+
+.autocomplete-suggestions strong {
+  font-weight: normal;
+  color: #3399ff;
+}
+
+.autocomplete-group {
+  padding: 2px 5px;
+}
+
+.autocomplete-group strong {
+  display: block;
+  border-bottom: 1px solid #000;
+}

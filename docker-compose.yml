@@ -1,0 +1,21 @@
+services:
+  web:
+    container_name: php-apache
+    links:
+      - db
+    build: .
+    volumes:
+      - "${SERVER_PATH}:/var/www/html"
+    ports:
+      - "${SERVER_PORT}:80"
+    env_file: .env
+
+  db:
+    container_name: mysql
+    volumes:
+      - "${DATABASE_PATH}:/db"
+    image: mysql:5.7
+    restart: always
+    env_file: .env
+
+version: '2'
